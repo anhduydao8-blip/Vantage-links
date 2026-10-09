@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Liên Hệ & Đầu Tư</title>
+    <!-- Chèn FontAwesome để hiển thị các icon mạng xã hội -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px 30px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #00ffcc;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #b0bec5;
+            margin-bottom: 30px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hiệu ứng hover chung */
+        .btn-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Nút Mở tài khoản Vantage (Nút chính, nổi bật nhất) */
+        .vantage {
+            background: linear-gradient(45deg, #ff4e50, #f9d423);
+            color: #000000;
+            animation: pulse 2s infinite;
+        }
+        
+        /* Nút Facebook */
+        .facebook {
+            background-color: #1877f2;
+        }
+
+        /* Nút Zalo */
+        .zalo {
+            background-color: #0068ff;
+        }
+
+        /* Nút Gọi điện thoại */
+        .phone {
+            background-color: #2ecc71;
+        }
+
+        .btn-link i {
+            font-size: 20px;
+        }
+
+        /* Hiệu ứng nhấp nháy thu hút sự chú ý cho nút Vantage */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Ảnh đại diện (Thay link ảnh của bạn vào đây) -->
+        <img src="https://mma.prnewswire.com/media/2932337/image_5028204_41206312.jpg" alt="Avatar" class="profile-img">
+        
+        <!-- Tên / Thương hiệu của bạn -->
+        <h1>ĐÀO DUY ANH </h1>
+        <p class="subtitle">Chuyên Viên Hỗ Trợ Đầu Tư Vantage</p>
+
+        <!-- Danh sách các đường Link -->
+        <div class="links-container">
+            
+            <!-- LINK MỞ TÀI KHOẢN VANTAGE -->
+            <a href="https://vigco.co/la-com-inv/vi/DUYANH789" target="_blank" class="btn-link vantage">
+                <i class="fa-solid fa-chart-line"></i> Mở Tài Khoản Vantage Ngay
+            </a>
+
+            <!-- LINK FACEBOOK -->
+            <a href="https://www.facebook.com/duiy.enh/" target="_blank" class="btn-link facebook">
+                <i class="fa-brands fa-facebook"></i> Kết nối qua Facebook
+            </a>
+
+            <!-- LINK ZALO -->
+            <a href="https://zalo.me/0347137361" target="_blank" class="btn-link zalo">
+                <i class="fa-solid fa-comment-sms"></i> Nhắn tin Zalo
+            </a>
+
+            <!-- SỐ ĐIỆN THOẠI (Bấm vào sẽ tự động gọi) -->
+            <a href="tel:0347137361" class="btn-link phone">
+                <i class="fa-solid fa-phone"></i> Hotline: 0347137361
+            </a>
+            
+        </div>
+    </div>
+
+</body>
+</html>
